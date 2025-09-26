@@ -6,7 +6,7 @@ import "./Footer.css";
 export function Footer() {
   return (
     <footer
-      className="w-full h-[50vh] bg-cover bg-center grid grid-cols-1 md:grid-cols-4 gap-4 p-16 justify-items-center items-start pt-12"
+      className="footer-container"
       style={{ backgroundImage: `url(${bg.src})` }}
     >
       {/* Logo */}
