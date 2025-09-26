@@ -1,9 +1,8 @@
 import { Carousel } from "@/components/Carousel/Carousel";
-import Image from "next/image";
 import balanca from "../assets/balanca.png";
 import areasAtuacao from "../assets/areas-atuacao.png";
 import { Cards } from "@/components/Cards/Cards";
-
+import "./page.css";
 const carouselItems = [
   {
     id: 1,
@@ -22,7 +21,7 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center gap-4 mt-12">
       <Carousel carouselItems={carouselItems} />
-      <div className="max-w-[1000px] mb-12">
+      <div className="cards">
         <Cards />
       </div>
     </section>

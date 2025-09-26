@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "../../assets/logo-caios.png";
 import bg from "../../assets/bg.png";
+import "./Footer.css";
 
 export function Footer() {
   return (
@@ -9,20 +10,15 @@ export function Footer() {
       style={{ backgroundImage: `url(${bg.src})` }}
     >
       {/* Logo */}
-      <div className="flex flex-col items-center md:items-start gap-4 align-center">
-        <figure className="w-[280px] h-[240px] relative">
-          <Image
-            src={logo}
-            alt="Logo dos advogados"
-            fill
-            style={{ objectFit: "contain" }}
-          />
+      <div className="logo-footer">
+        <figure>
+          <Image src={logo} alt="Logo dos advogados" className="image-footer" />
         </figure>
         <p className="">texto</p>
       </div>
 
       {/* Endereço */}
-      <div className="flex flex-col gap-2 pt-12 text-black">
+      <div className="infos">
         <h3 className="text-lg font-semibold">Endereço</h3>
         <p className="street">Rua X</p>
         <p className="neighborhood">Bairro Y</p>
@@ -30,14 +26,14 @@ export function Footer() {
       </div>
 
       {/* Contato */}
-      <div className="flex flex-col gap-2 pt-12 text-black">
+      <div className="infos">
         <h3 className="text-lg font-semibold">Contato</h3>
         <p>(11) 1234-5678</p>
         <p>0X7oD@example.com</p>
       </div>
 
       {/* Redes Sociais */}
-      <div className="flex flex-col gap-2 pt-12 text-black">
+      <div className="infos">
         <h3 className="text-lg font-semibold">Redes Sociais</h3>
         <div className="flex gap-2">
           <p>Face</p>

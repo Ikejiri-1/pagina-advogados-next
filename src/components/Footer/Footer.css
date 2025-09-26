@@ -1,0 +1,15 @@
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-top: 3em;
+}
+.logo-footer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-footer {
+  width: 280px;
+  height: 240px;
+}
