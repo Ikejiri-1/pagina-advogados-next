@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Cards() {
   return (
-    <ul className="flex flex-wrap justify-between gap-4 p-0">
+    <ul className="flex flex-wrap justify-center gap-4 p-0">
       {cards.map((card) => (
         <li key={card.id} className="list-none">
           <Link
@@ -13,7 +13,7 @@ export function Cards() {
             {/* Imagem de fundo */}
             <div
               className={`absolute inset-0 bg-center bg-contain bg-no-repeat opacity-0 transition-opacity duration-600 hover:opacity-100`}
-              style={{ backgroundImage: "url(/src/assets/balanca.png)" }}
+              style={{ backgroundImage: "url(../assets/balanca.png)" }}
             ></div>
 
             {/* Conteúdo do card */}

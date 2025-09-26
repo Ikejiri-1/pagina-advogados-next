@@ -5,11 +5,11 @@ import bg from "../../assets/bg.png";
 export function Footer() {
   return (
     <footer
-      className="w-full h-[50vh] bg-cover bg-center grid grid-cols-1 md:grid-cols-4 gap-4 p-16 justify-items-center items-start"
+      className="w-full h-[50vh] bg-cover bg-center grid grid-cols-1 md:grid-cols-4 gap-4 p-16 justify-items-center items-start pt-12"
       style={{ backgroundImage: `url(${bg.src})` }}
     >
       {/* Logo */}
-      <div className="flex flex-col items-center md:items-start gap-4">
+      <div className="flex flex-col items-center md:items-start gap-4 align-center">
         <figure className="w-[280px] h-[240px] relative">
           <Image
             src={logo}
@@ -18,7 +18,7 @@ export function Footer() {
             style={{ objectFit: "contain" }}
           />
         </figure>
-        <p className="text-black text-center md:text-left">texto</p>
+        <p className="">texto</p>
       </div>
 
       {/* Endereço */}
