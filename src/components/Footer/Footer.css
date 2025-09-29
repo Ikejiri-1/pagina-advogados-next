@@ -1,8 +1,7 @@
 .footer-container {
   width: 100%; /* w-full */
   height: auto; /* h-[50vh] */
-  background-size: cover; /* bg-cover */
-  background-position: center; /* bg-center */
+  background-color: var(--dark-blue);
 
   display: grid; /* grid */
   grid-template-columns: repeat(4, minmax(0, 1fr)); /* grid-cols-1 */
@@ -13,6 +12,7 @@
 
   justify-items: center; /* justify-items-center */
   align-items: start; /* items-start */
+  color: var(--gray);
 }
 
 .infos {
@@ -27,8 +27,11 @@
   align-items: center;
 }
 .image-footer {
-  width: 280px;
-  height: 240px;
+  width: 320px;
+  height: 320px;
+  mask: url("../../assets/logo.png") no-repeat center / contain;
+  -webkit-mask: url("../../assets/logo.png") no-repeat center / contain;
+  background: var(--gray);
 }
 
 @media screen and (max-width: 1024px) {

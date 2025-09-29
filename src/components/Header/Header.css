@@ -10,14 +10,14 @@
   width: 100%;
   margin: 0 auto;
 }
-.logo-header {
-  width: 280px;
-  height: 240px;
+.logo {
+  width: 320px;
+  height: 280px;
 }
 .links-list {
   display: flex;
   gap: 2em;
-  padding-top: 6em;
+
   text-transform: uppercase;
 }
 

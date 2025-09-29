@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../../assets/logo-caios.png";
+import logo from "../../assets/logo.png";
 import bg from "../../assets/bg.png";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -24,7 +24,7 @@ export function Header() {
       {/* Logo */}
       <div className="mt-4 md:mt-0">
         <Link href="/">
-          <figure className="logo-header">
+          <figure className="logo">
             <Image src={logo} alt="Logo dos advogados" />
           </figure>
         </Link>

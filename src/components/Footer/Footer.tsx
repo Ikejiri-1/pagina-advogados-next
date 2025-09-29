@@ -1,20 +1,19 @@
 import Image from "next/image";
-import logo from "../../assets/logo-caios.png";
-import bg from "../../assets/bg.png";
+
 import "./Footer.css";
 
 export function Footer() {
   return (
-    <footer
-      className="footer-container"
-      style={{ backgroundImage: `url(${bg.src})` }}
-    >
+    <footer className="footer-container">
       {/* Logo */}
       <div className="logo-footer">
         <figure>
-          <Image src={logo} alt="Logo dos advogados" className="image-footer" />
+          <Image
+            src=""
+            alt="logo dos advogados escrito Alves & Ikejiri advogados associados"
+            className="image-footer"
+          />
         </figure>
-        <p className="">texto</p>
       </div>
 
       {/* Endereço */}
