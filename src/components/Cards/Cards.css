@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background-color: var(--dark-blue);
   color: white;
   text-decoration: none;
   width: 100%;

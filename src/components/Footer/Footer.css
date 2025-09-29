@@ -43,4 +43,14 @@
   .infos {
     padding-top: 1em;
   }
+  .image-footer {
+    width: 280px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .image-footer {
+    width: 200px;
+    height: 200px;
+  }
 }
