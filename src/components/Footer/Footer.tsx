@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import "./Footer.css";
 
 export function Footer() {
@@ -7,13 +5,7 @@ export function Footer() {
     <footer className="footer-container">
       {/* Logo */}
       <div className="logo-footer">
-        <figure>
-          <Image
-            src=""
-            alt="logo dos advogados escrito Alves & Ikejiri advogados associados"
-            className="image-footer"
-          />
-        </figure>
+        <figure className="image-footer"></figure>
       </div>
 
       {/* Endereço */}
