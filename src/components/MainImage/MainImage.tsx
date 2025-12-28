@@ -1,4 +1,8 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
+import { useEffect, useRef } from "react";
+import "./MainImage.css";
 
 interface MainImageProps {
   img: string | StaticImageData;
@@ -7,26 +11,36 @@ interface MainImageProps {
 }
 
 export function MainImage({ img, title, alt }: MainImageProps) {
-  return (
-    <div className="relative w-full h-[60vh]">
-      <Image
-        src={img}
-        alt={alt}
-        fill
-        style={{ objectFit: "cover", opacity: 0.9 }}
-        priority
-      />
+  const imageRef = useRef<HTMLDivElement>(null);
 
-      {title && (
-        <h2
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-          text-white text-2xl font-bold text-center max-w-[80%] 
-          uppercase bg-black/50 px-2 py-1 rounded z-10 pointer-events-none 
-          drop-shadow-lg"
-        >
-          {title}
-        </h2>
-      )}
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!imageRef.current) return;
+
+      const scrollY = window.scrollY;
+
+      imageRef.current.style.transform = `translateY(${
+        scrollY * 0.25
+      }px) scale(1.05)`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div className="main-image-container">
+      <div ref={imageRef} className="main-image">
+        <Image
+          src={img}
+          alt={alt}
+          fill
+          priority
+          style={{ objectFit: "cover" }}
+        />
+      </div>
+
+      {title && <h2 className="main-image-title">{title}</h2>}
     </div>
   );
 }

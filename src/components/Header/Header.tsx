@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import logo from "../../assets/logo.png";
-import bg from "../../assets/bg.png";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import "./Header.css";
@@ -17,10 +16,7 @@ const links = [
 export function Header() {
   const pathname = usePathname();
   return (
-    <header
-      className="header-container"
-      style={{ backgroundImage: `url(${bg.src})` }}
-    >
+    <header className="header-container">
       {/* Logo */}
       <div className="mt-4 md:mt-0">
         <Link href="/">
