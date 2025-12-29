@@ -7,6 +7,7 @@ import img from "../assets/wpaper.webp";
 import { HelpContent } from "@/components/HelpContent";
 import { BlockOriginsQuestions } from "@/components/BlockOriginsQuestion";
 import { WhyBlocked } from "@/components/WhyBlocked";
+import { WhyIsPossible } from "@/components/WhyIsPossible";
 
 export default function Home() {
   return (
@@ -33,6 +34,9 @@ export default function Home() {
       </div>
       <div>
         <BlockOriginsQuestions />
+      </div>
+      <div>
+        <WhyIsPossible />
       </div>
     </section>
   );
