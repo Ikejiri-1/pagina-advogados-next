@@ -2,3 +2,10 @@
   max-width: 1000px;
   margin: 2em auto;
 }
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+  margin: 4em auto;
+}

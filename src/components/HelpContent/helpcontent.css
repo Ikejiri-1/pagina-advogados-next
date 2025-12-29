@@ -31,12 +31,21 @@
 }
 
 .help-content {
+  margin: 0 auto 4em auto;
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  max-width: 1000px;
-  margin: 0 auto 4em auto;
+  gap: 2em;
+  max-width: 600px;
+  text-align: center;
 }
+
+.help-content li span {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.6em;
+}
+
 .help-content li {
   opacity: 0;
   transform: translateX(-40px);

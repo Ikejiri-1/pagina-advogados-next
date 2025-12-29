@@ -34,9 +34,9 @@ export const WhyIsPossible = () => {
           subtitle="É possível pedir a liberação nos seguintes casos:"
           content={[
             "VERBAS IMPENHORÁVEIS: Salários, aposentadoria, pensão alimentícia, benefícios sociais etc;",
-            "VALORES ACIMA DO VALOR DA DÍVIDA: o valor excedente deverá ser liberado (porém, se todo valor for verba impenhorável, buscamos a liberação total);",
-            "COMPROMETIMENTO DA SUBSISTÊNCIA: o credor não pode bloquear todos os bens e valores do devedor a ponto de prejudicar a subsistência dele, pois isso seria uma grave violação do princípio da dignidade da pessoa humana;",
-            "COMPROMETIMENTO DA ATIVIDADE EMPRESARIAL: se os valores bloqueados comprometerem o funcionamento da empresa de empresários individuais e empresas de pequeno porte.",
+            "VALORES ACIMA DO VALOR DA DÍVIDA: O valor excedente deverá ser liberado (porém, se todo valor for verba impenhorável, buscamos a liberação total);",
+            "COMPROMETIMENTO DA SUBSISTÊNCIA: O credor não pode bloquear todos os bens e valores do devedor a ponto de prejudicar a subsistência dele, pois isso seria uma grave violação do princípio da dignidade da pessoa humana;",
+            "COMPROMETIMENTO DA ATIVIDADE EMPRESARIAL: Se os valores bloqueados comprometerem o funcionamento da empresa de empresários individuais e empresas de pequeno porte.",
           ]}
         />
       </div>

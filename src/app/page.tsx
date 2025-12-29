@@ -8,6 +8,7 @@ import { HelpContent } from "@/components/HelpContent";
 import { BlockOriginsQuestions } from "@/components/BlockOriginsQuestion";
 import { WhyBlocked } from "@/components/WhyBlocked";
 import { WhyIsPossible } from "@/components/WhyIsPossible";
+import { AboutUs } from "@/components/AboutUs";
 
 export default function Home() {
   return (
@@ -26,17 +27,16 @@ export default function Home() {
       {/* <div className="cards">
         <Cards />
       </div> */}
-      <div>
+      <div className="content-section">
         <HelpContent />
-      </div>
-      <div>
+
         <WhyBlocked />
-      </div>
-      <div>
+
         <BlockOriginsQuestions />
-      </div>
-      <div>
+
         <WhyIsPossible />
+
+        <AboutUs />
       </div>
     </section>
   );

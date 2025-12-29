@@ -16,7 +16,7 @@
 }
 
 .block-title.animate {
-  animation: fadeUp 0.8s ease-out forwards;
+  animation: fadeLeft 0.8s ease-out forwards;
 }
 
 /* CARD */
@@ -26,21 +26,10 @@
 }
 
 .card-wrapper.animate {
-  animation: fadeFromLeft 0.9s ease-out forwards;
+  animation: fadeLeft 0.9s ease-out forwards;
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeFromLeft {
+@keyframes fadeLeft {
   from {
     opacity: 0;
     transform: translateX(-50px);
