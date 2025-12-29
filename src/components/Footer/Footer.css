@@ -29,8 +29,8 @@
 .image-footer {
   width: 320px;
   height: 320px;
-  mask: url("../../assets/logo.png") no-repeat center / contain;
-  -webkit-mask: url("../../assets/logo.png") no-repeat center / contain;
+  mask: url("../../assets/logo_azul.png") no-repeat center / contain;
+  -webkit-mask: url("../../assets/logo_azul.png") no-repeat center / contain;
   background: var(--gray);
 }
 

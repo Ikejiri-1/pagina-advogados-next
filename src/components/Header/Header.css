@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 1em 12em;
+  padding: 0 12em;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -14,14 +14,14 @@
   left: 0;
   width: 100%;
   z-index: 10;
-
+  height: 35vh;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 .logo {
-  width: 320px;
-  height: 280px;
+  width: 140px;
+  height: 140px;
 }
 .links-list {
   display: flex;

@@ -8,9 +8,10 @@ interface MainImageProps {
   img: string | StaticImageData;
   alt: string;
   title?: string;
+  description?: string;
 }
 
-export function MainImage({ img, title, alt }: MainImageProps) {
+export function MainImage({ img, title, alt, description }: MainImageProps) {
   const imageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -41,6 +42,8 @@ export function MainImage({ img, title, alt }: MainImageProps) {
       </div>
 
       {title && <h2 className="main-image-title">{title}</h2>}
+
+      {description && <p className="main-image-description">{description}</p>}
     </div>
   );
 }
