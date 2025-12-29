@@ -3,8 +3,9 @@
 import "./page.css";
 import { MainImage } from "@/components/MainImage/MainImage";
 import img from "../assets/wpaper.webp";
-import { BlockAccQuestion } from "@/components/BlockAccQuestion";
+
 import { HelpContent } from "@/components/HelpContent";
+import { BlockOriginsQuestions } from "@/components/BlockOriginsQuestion";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
         <HelpContent />
       </div>
       <div>
-        <BlockAccQuestion />
+        <BlockOriginsQuestions />
       </div>
     </section>
   );

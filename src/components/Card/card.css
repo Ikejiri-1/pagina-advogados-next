@@ -5,8 +5,8 @@
   border: 2px solid #ccc;
   border-radius: 0.5em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  height: 400px;
+  max-width: 650px;
+  height: 530px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,17 +14,30 @@
 }
 
 .card-title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 1em 0;
   width: 400px;
   font-weight: bold;
   text-align: center;
   color: #1f2070;
+  text-transform: uppercase;
+}
+.card-subtitle {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  width: 400px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
 }
 
 .card-content {
-  list-style-type: disc;
-  text-align: left;
+  font-size: 0.9em;
+  font-weight: 500;
+  list-style-type: decimal;
   color: #333;
+  padding-left: 0.3em;
   margin-bottom: 0.6em;
+  margin-left: 1em;
 }
