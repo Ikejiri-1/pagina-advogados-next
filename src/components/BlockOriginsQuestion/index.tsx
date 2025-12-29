@@ -42,6 +42,7 @@ export const BlockOriginsQuestions = () => {
             "PROCESSOS CÍVEIS: Débitos oriundos de ações cíveis também podem ser cobrados por meio de uma ação de execução;",
             "MEDIDAS CAUTELARES CRIMINAIS: Em investigações que envolvam valores poderá haver bloqueio preventivo para preservar provas e/ou restituir a vítima.",
           ]}
+          subcontent="Cada caso tem suas particularidades, mas em todos é necessário agir o mais rápido possível para evitar que ativos impenhoráveis fiquem retidos por longos períodos."
         />
       </div>
     </section>

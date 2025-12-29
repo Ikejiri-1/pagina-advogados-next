@@ -4,6 +4,7 @@ interface CardProps {
   title?: string;
   subtitle?: string;
   content?: string[];
+  subcontent?: string;
   uniqueContent?: string;
 }
 
@@ -11,6 +12,7 @@ export const Card = ({
   title,
   subtitle,
   content,
+  subcontent,
   uniqueContent,
 }: CardProps) => {
   return (
@@ -28,6 +30,7 @@ export const Card = ({
                   </li>
                 ))}
             </ul>
+            {subcontent && <p className="card-subcontent">{subcontent}</p>}
           </div>
         )}
         {uniqueContent && (
