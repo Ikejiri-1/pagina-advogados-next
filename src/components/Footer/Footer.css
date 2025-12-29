@@ -1,6 +1,6 @@
 .footer-container {
   width: 100%; /* w-full */
-  height: auto; /* h-[50vh] */
+  height: 50vh; /* h-[50vh] */
   background-color: var(--dark-blue);
 
   display: grid; /* grid */
@@ -27,8 +27,8 @@
   align-items: center;
 }
 .image-footer {
-  width: 320px;
-  height: 320px;
+  width: 200px;
+  height: 200px;
   mask: url("../../assets/logo_azul.png") no-repeat center / contain;
   -webkit-mask: url("../../assets/logo_azul.png") no-repeat center / contain;
   background: var(--gray);
