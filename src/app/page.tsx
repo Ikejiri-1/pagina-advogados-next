@@ -1,4 +1,4 @@
-import { Cards } from "@/components/Cards/Cards";
+// import { Cards } from "@/components/Cards/Cards";
 import "./page.css";
 import { MainImage } from "@/components/MainImage/MainImage";
 import img from "../assets/wpaper.webp";
@@ -13,10 +13,13 @@ export default function Home() {
           Sua conta bancária está sendo bloqueada por uma decisão judicial?
        "
         description="Conte com a nossa assessoria especializada em liberação de valores bloqueados"
+        button={true}
+        buttonText="FALE COM UM ADVOGADO"
       />
-      <div className="cards">
+
+      {/* <div className="cards">
         <Cards />
-      </div>
+      </div> */}
     </section>
   );
 }
