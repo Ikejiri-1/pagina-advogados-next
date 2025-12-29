@@ -20,6 +20,9 @@ export default function Home() {
       {/* <div className="cards">
         <Cards />
       </div> */}
+      <div className="main-content">
+        <h2 className="main-content-title">COMO PODEMOS TE AJUDAR</h2>
+      </div>
     </section>
   );
 }

@@ -2,3 +2,21 @@
   max-width: 1000px;
   margin: 2em auto;
 }
+
+.main-content-title {
+  margin: 2em 0;
+  font-size: 2.5em;
+  text-decoration: underline;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

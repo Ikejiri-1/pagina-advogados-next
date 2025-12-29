@@ -49,12 +49,25 @@ export function MainImage({
         />
       </div>
 
-      {title && <h2 className="main-image-title">{title}</h2>}
-      {description && <p className="main-image-description">{description}</p>}
+      {title && (
+        <div className="main-image-title">
+          <div className="slide-wrapper-title">{title}</div>
+        </div>
+      )}
+
+      {description && (
+        <div className="main-image-description">
+          <div className="slide-wrapper-description">{description}</div>
+        </div>
+      )}
 
       {button && (
         <Link href={whatsappLink} target="_blank">
-          <button>{buttonText}</button>
+          <div className="main-image-button">
+            <div className="slide-wrapper-button">
+              <button>{buttonText}</button>
+            </div>
+          </div>
         </Link>
       )}
     </div>
