@@ -15,7 +15,7 @@ export const HelpContent = () => {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.4 }
     );
 
     if (titleRef.current) observer.observe(titleRef.current);
