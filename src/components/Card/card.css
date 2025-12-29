@@ -1,0 +1,30 @@
+.card-with-title,
+.card-unique-content {
+  margin: 4em auto;
+  padding: 1em;
+  border: 2px solid #ccc;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 1em 0;
+  width: 400px;
+  font-weight: bold;
+  text-align: center;
+  color: #1f2070;
+}
+
+.card-content {
+  list-style-type: disc;
+  text-align: left;
+  color: #333;
+  margin-bottom: 0.6em;
+}

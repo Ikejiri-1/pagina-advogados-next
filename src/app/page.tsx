@@ -1,7 +1,10 @@
 // import { Cards } from "@/components/Cards/Cards";
+"use client";
 import "./page.css";
 import { MainImage } from "@/components/MainImage/MainImage";
 import img from "../assets/wpaper.webp";
+import { BlockAccQuestion } from "@/components/BlockAccQuestion";
+import { HelpContent } from "@/components/HelpContent";
 
 export default function Home() {
   return (
@@ -20,8 +23,11 @@ export default function Home() {
       {/* <div className="cards">
         <Cards />
       </div> */}
-      <div className="main-content">
-        <h2 className="main-content-title">COMO PODEMOS TE AJUDAR</h2>
+      <div>
+        <HelpContent />
+      </div>
+      <div>
+        <BlockAccQuestion />
       </div>
     </section>
   );
