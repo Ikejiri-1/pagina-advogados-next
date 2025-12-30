@@ -7,10 +7,11 @@
 :root {
   --dark-blue: #302557;
   --gray: rgb(255, 255, 255);
+  --offWhite: #e7e2de;
 }
 
 body {
-  background-color: #e7e2de;
+  background-color: var(--offWhite);
 }
 
 h2 {

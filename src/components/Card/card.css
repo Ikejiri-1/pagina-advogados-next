@@ -1,5 +1,5 @@
 .card-with-title {
-  margin: 4em auto;
+  margin: 0 auto;
   padding: 1em;
   border: 2px solid #ccc;
   border-radius: 0.5em;
@@ -14,7 +14,7 @@
   color: var(--dark-blue);
 }
 .card-unique-content {
-  margin: 4em auto;
+  margin: 2em auto;
   padding: 1em;
   border: 2px solid #ccc;
   border-radius: 0.5em;

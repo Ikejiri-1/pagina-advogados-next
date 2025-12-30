@@ -57,8 +57,6 @@ export default function Home() {
         <BlockOriginsQuestions />
 
         <WhyIsPossible />
-
-        <AboutUs />
       </div>
       <div className="image-container">
         <figure ref={imageRef} className="image-animate">
@@ -66,8 +64,14 @@ export default function Home() {
             src={lawyers}
             alt="Foto dos advogados Caio Ikejiri e Caio Alves utilizando terno"
             width={400}
+            className="img-lawyers"
           />
+          <div className="names">
+            <p>Caio Ikejiri</p>
+            <p>Caio Alves</p>
+          </div>
         </figure>
+        <AboutUs />
       </div>
     </section>
   );

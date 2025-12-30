@@ -1,14 +1,15 @@
 .why-title {
   font-size: 2.5em;
   text-align: center;
-  text-decoration: underline;
   opacity: 0;
   transform: translateY(30px);
+  margin-bottom: 1em;
 }
 
 .card-wrapper {
   opacity: 0;
   transform: translateY(40px);
+  margin-bottom: 1em;
 }
 
 .why-is-possible.animate .why-title {

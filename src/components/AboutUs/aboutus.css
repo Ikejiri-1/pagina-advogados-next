@@ -1,7 +1,6 @@
 .about-us-title {
   font-size: 2.5em;
   text-align: center;
-  text-decoration: underline;
 }
 
 .about-us-list,
@@ -21,8 +20,11 @@
 .about-us-list li span {
   font-size: 1.2em;
   font-weight: 600;
-  color: var(--dark-blue);
+  color: var(--offWhite);
   line-height: 1.6em;
+}
+.about-us-title {
+  color: var(--offWhite);
 }
 
 .about-us.animate .about-us-title {
