@@ -4,10 +4,13 @@
   font-size: 2.5em;
   text-align: center;
   text-decoration: underline;
+  color: var(--dark-blue);
 }
 .card-unique-content {
   opacity: 0;
   transform: translateY(30px);
+  background-color: var(--gray);
+  color: var(--dark-blue);
 }
 
 .why-blocked.animate .why-blocked-title {

@@ -21,7 +21,7 @@
 .about-us-list li span {
   font-size: 1.2em;
   font-weight: 600;
-  color: #333;
+  color: var(--dark-blue);
   line-height: 1.6em;
 }
 

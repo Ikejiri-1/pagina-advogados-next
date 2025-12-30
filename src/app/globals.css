@@ -8,3 +8,11 @@
   --dark-blue: #302557;
   --gray: rgb(255, 255, 255);
 }
+
+body {
+  background-color: #e7e2de;
+}
+
+h2 {
+  color: var(--dark-blue);
+}

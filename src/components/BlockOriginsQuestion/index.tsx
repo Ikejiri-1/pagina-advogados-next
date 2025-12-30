@@ -28,9 +28,9 @@ export const BlockOriginsQuestions = () => {
 
   return (
     <section className="block-origins">
-      <h3 className="block-title" ref={blockTitleRef}>
+      <h2 className="block-title" ref={blockTitleRef}>
         QUAIS AS POSSÍVEIS ORIGENS DOS BLOQUEIOS?
-      </h3>
+      </h2>
 
       <div ref={cardRef} className="card-wrapper">
         <Card

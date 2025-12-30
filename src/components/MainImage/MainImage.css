@@ -23,8 +23,8 @@
 }
 
 .main-image-title {
-  top: 60%;
-  color: white;
+  top: 45%;
+  color: var(--gray);
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -33,27 +33,33 @@
 }
 
 .main-image-description {
-  top: 75%;
-  color: white;
+  top: 65%;
+  color: var(--gray);
   font-size: 1.2rem;
   text-align: center;
   max-width: 80%;
 }
 
 .main-image-button {
-  top: 85%;
+  top: 80%;
 }
 
 .main-image-button button {
   cursor: pointer;
-  background-color: red;
+  background: rgba(8, 1, 41, 0.486);
   padding: 1em 5em;
-  color: wheat;
+  color: var(--gray);
   border-radius: 1em;
 }
+
+.main-image-button button:hover {
+  background-color: var(--dark-blue);
+  transition: all 0.5s ease-in-out;
+}
+
 .slide-wrapper-title,
 .slide-wrapper-description {
-  background-color: rgba(0, 0, 0, 0.2);
+  background: rgba(8, 1, 41, 0.486);
   padding: 0.5em;
   border-radius: 0.2em;
   text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
