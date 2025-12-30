@@ -1,7 +1,31 @@
 import { useEffect, useRef } from "react";
 import "./helpcontent.css";
+import { AnimatedCard } from "../Cards/AnimatedCard";
 
 export const HelpContent = () => {
+  const content = [
+    {
+      title: "ASSESSORIA JURÍDICA ESPECIALIZADA",
+      description:
+        "Assessoria jurídica para te ajudar a recuperar os valores bloqueados.",
+    },
+    {
+      title: "ANÁLISE OBJETIVA DO CASO",
+      description:
+        "Identificamos a origem da dívida e explicamos detalhadamente a melhor estratégia para sua defesa.",
+    },
+    {
+      title: "ATUAÇÃO ÁGIL E EFICAZ",
+      description:
+        "Atuação rápida e estratégica para proteger seus direitos e minimizar prejuízos.",
+    },
+    {
+      title: "NEGOCIAÇÃO DA DÍVIDA",
+      description:
+        "Negociação para buscar melhores condições de pagamento e soluções viáveis.",
+    },
+  ];
+
   const titleRef = useRef<HTMLHeadingElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
 
@@ -29,29 +53,14 @@ export const HelpContent = () => {
         <h2 className="main-content-title title" ref={titleRef}>
           COMO PODEMOS TE AJUDAR
         </h2>
-        <ul className="help-content animate-left" ref={listRef}>
-          <li>
-            <span>
-              Assessoria jurídica para te ajudar a recuperar os valores
-              bloqueados
-            </span>
-          </li>
-          <li>
-            <span>
-              Análise objetiva do seu caso, identificando a origem da dívida e
-              explicando detalhadamente a melhor estratégia para sua defesa
-            </span>
-          </li>
-          <li>
-            <span>Atuação ágil e eficaz</span>
-          </li>
-          <li>
-            <span>
-              Negociação da dívida para conseguir melhores condições de
-              pagamento
-            </span>
-          </li>
-        </ul>
+        <div className="cards-grid">
+          {content.map((item, index) => (
+            <AnimatedCard key={index}>
+              <h3 className="card-item-title">{item.title}</h3>
+              <p className="card-item-description">{item.description}</p>
+            </AnimatedCard>
+          ))}
+        </div>
       </div>
     </>
   );

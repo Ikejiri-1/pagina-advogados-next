@@ -1,7 +1,30 @@
 "use client";
-import { Card } from "../Card";
+import { AnimatedCard } from "../Cards/AnimatedCard";
 import "./whyispossible.css";
 import { useRef, useEffect } from "react";
+
+const content = [
+  {
+    title: "VERBAS IMPENHORÁVEIS",
+    description:
+      "Salários, aposentadoria, pensão alimentícia, benefícios sociais etc.",
+  },
+  {
+    title: "VALORES ACIMA DO VALOR DA DÍVIDA",
+    description:
+      "O valor excedente deverá ser liberado. Porém, se todo o valor for verba impenhorável, buscamos a liberação total.",
+  },
+  {
+    title: "COMPROMETIMENTO DA SUBSISTÊNCIA",
+    description:
+      "O credor não pode bloquear todos os bens e valores do devedor a ponto de prejudicar sua subsistência, pois isso configura grave violação do princípio da dignidade da pessoa humana.",
+  },
+  {
+    title: "COMPROMETIMENTO DA ATIVIDADE EMPRESARIAL",
+    description:
+      "Se os valores bloqueados comprometerem o funcionamento da empresa de empresários individuais ou de empresas de pequeno porte.",
+  },
+];
 
 export const WhyIsPossible = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -28,17 +51,13 @@ export const WhyIsPossible = () => {
         PORQUE É POSSÍVEL REAVER OS VALORES BLOQUEADOS?
       </h2>
 
-      <div className="card-wrapper">
-        <Card
-          title="A lei protege certas verbas e alguns bens do devedor. Isso por conta do direito à vida digna da pessoa"
-          subtitle="É possível pedir a liberação nos seguintes casos:"
-          content={[
-            "VERBAS IMPENHORÁVEIS: Salários, aposentadoria, pensão alimentícia, benefícios sociais etc;",
-            "VALORES ACIMA DO VALOR DA DÍVIDA: O valor excedente deverá ser liberado (porém, se todo valor for verba impenhorável, buscamos a liberação total);",
-            "COMPROMETIMENTO DA SUBSISTÊNCIA: O credor não pode bloquear todos os bens e valores do devedor a ponto de prejudicar a subsistência dele, pois isso seria uma grave violação do princípio da dignidade da pessoa humana;",
-            "COMPROMETIMENTO DA ATIVIDADE EMPRESARIAL: Se os valores bloqueados comprometerem o funcionamento da empresa de empresários individuais e empresas de pequeno porte.",
-          ]}
-        />
+      <div className="cards-grid">
+        {content.map((item, index) => (
+          <AnimatedCard key={index}>
+            <h3 className="card-item-title">{item.title}</h3>
+            <p className="card-item-description">{item.description}</p>
+          </AnimatedCard>
+        ))}
       </div>
     </div>
   );

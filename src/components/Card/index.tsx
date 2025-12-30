@@ -1,3 +1,4 @@
+import { AnimatedCard } from "../Cards/AnimatedCard";
 import "./card.css";
 
 interface CardProps {
@@ -22,14 +23,12 @@ export const Card = ({
           <div className="card-with-title">
             <h2 className="card-title">{title}</h2>
             <h3 className="card-subtitle">{subtitle}</h3>
-            <ul>
+            <div>
               {content &&
                 content.map((c, index) => (
-                  <li key={index} className="card-content">
-                    {c}
-                  </li>
+                  <AnimatedCard key={index}>{c}</AnimatedCard>
                 ))}
-            </ul>
+            </div>
             {subcontent && <p className="card-subcontent">{subcontent}</p>}
           </div>
         )}

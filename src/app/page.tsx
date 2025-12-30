@@ -24,7 +24,7 @@ export default function Home() {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     if (imageRef.current) observer.observe(imageRef.current);

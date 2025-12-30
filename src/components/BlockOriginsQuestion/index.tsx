@@ -1,10 +1,43 @@
 "use client";
 
-import { Card } from "../Card";
+import { AnimatedCard } from "../Cards/AnimatedCard";
 import "./blockorigins.css";
 import { useEffect, useRef } from "react";
 
 export const BlockOriginsQuestions = () => {
+  const content = [
+    {
+      title: "ORIGEM DO BLOQUEIO",
+      description:
+        "Entender a origem do bloqueio ajuda a preparar o pedido de liberação dos valores.",
+    },
+    {
+      title: "EXECUÇÕES FISCAIS",
+      description:
+        "A União, Estados ou Municípios podem bloquear ativos financeiros quando cobrarem tributos judicialmente.",
+    },
+    {
+      title: "AÇÕES TRABALHISTAS",
+      description:
+        "Valores reconhecidos em ações trabalhistas podem ser cobrados judicialmente por meio de execução.",
+    },
+    {
+      title: "PROCESSOS CÍVEIS",
+      description:
+        "Débitos oriundos de ações cíveis também podem ser cobrados por meio de uma ação de execução.",
+    },
+    {
+      title: "MEDIDAS CAUTELARES CRIMINAIS",
+      description:
+        "Em investigações que envolvem valores, pode haver bloqueio preventivo para preservar provas e/ou restituir a vítima.",
+    },
+    {
+      title: "ATENÇÃO AO PRAZO",
+      description:
+        "Cada caso tem suas particularidades, mas é essencial agir rapidamente para evitar que ativos impenhoráveis fiquem retidos por longos períodos.",
+    },
+  ];
+
   const blockTitleRef = useRef<HTMLHeadingElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -32,18 +65,13 @@ export const BlockOriginsQuestions = () => {
         QUAIS AS POSSÍVEIS ORIGENS DOS BLOQUEIOS?
       </h2>
 
-      <div ref={cardRef} className="card-wrapper">
-        <Card
-          title="Sua conta bancária foi bloqueada por uma decisão judicial?"
-          subtitle="Entender a origem do bloqueio ajuda a preparar o pedido de liberação dos valores:"
-          content={[
-            "EXECUÇÕES FISCAIS: A União, Estados ou Municípios podem bloquear ativos financeiros quando cobrarem os tributos judicialmente;",
-            "AÇÕES TRABALHISTAS: Valores que surgiram numa ação trabalhista podem ser cobrados judicialmente através de uma ação de execução;",
-            "PROCESSOS CÍVEIS: Débitos oriundos de ações cíveis também podem ser cobrados por meio de uma ação de execução;",
-            "MEDIDAS CAUTELARES CRIMINAIS: Em investigações que envolvam valores poderá haver bloqueio preventivo para preservar provas e/ou restituir a vítima.",
-          ]}
-          subcontent="Cada caso tem suas particularidades, mas em todos é necessário agir o mais rápido possível para evitar que ativos impenhoráveis fiquem retidos por longos períodos."
-        />
+      <div className="cards-grid">
+        {content.map((item, index) => (
+          <AnimatedCard key={index}>
+            <h3 className="card-item-title">{item.title}</h3>
+            <p className="card-item-description">{item.description}</p>
+          </AnimatedCard>
+        ))}
       </div>
     </section>
   );
