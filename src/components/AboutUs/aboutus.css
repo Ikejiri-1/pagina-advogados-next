@@ -46,3 +46,12 @@
     transform: translateX(0);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .about-us-title {
+    font-size: 1.5em;
+  }
+  .about-us-list li span {
+    font-size: 1em;
+  }
+}

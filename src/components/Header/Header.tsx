@@ -20,8 +20,8 @@ export function Header() {
       {/* Logo */}
       <div className="logo-header">
         <Link href="/">
-          <figure className="logo">
-            <Image src={logo} alt="Logo dos advogados" />
+          <figure>
+            <Image src={logo} alt="Logo dos advogados" className="logo" />
           </figure>
         </Link>
       </div>

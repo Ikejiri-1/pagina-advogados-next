@@ -40,3 +40,9 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .why-title {
+    font-size: 1.5em;
+  }
+}

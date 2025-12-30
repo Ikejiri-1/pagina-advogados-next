@@ -39,3 +39,9 @@
     transform: translateX(0);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .block-title {
+    font-size: 1.5em;
+  }
+}

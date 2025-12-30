@@ -43,3 +43,27 @@
   margin: 0 auto;
   width: 90%;
 }
+
+@media screen and (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    text-align: center;
+  }
+  .card-item-title {
+    font-size: 1.5em;
+  }
+  .card-item-description {
+    font-size: 1.1em;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-item-title {
+    font-size: 1.2em;
+  }
+  .card-item-description {
+    font-size: 1em;
+    width: 100%;
+  }
+}
