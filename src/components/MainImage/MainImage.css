@@ -124,12 +124,12 @@
   }
   .main-image-title {
     top: 50%;
-    max-width: 100%;
+    max-width: 90%;
     width: 800px;
   }
   .main-image-description {
     top: 68%;
-    max-width: 100%;
+    max-width: 90%;
     width: 600px;
     font-size: 1.5em;
   }

@@ -23,7 +23,7 @@ export const HelpContent = () => {
     {
       title: "NEGOCIAÇÃO DA DÍVIDA",
       description:
-        "Negociação para buscar melhores condições de pagamento e soluções viáveis.",
+        "Negociação da dívida para conseguir melhores condições de pagamento.",
     },
   ];
 

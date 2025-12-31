@@ -18,3 +18,13 @@ body {
 h2 {
   color: var(--dark-blue);
 }
+
+.block-origins,
+.why-is-possible,
+.main-image-container {
+  overflow-x: hidden;
+}
+html,
+body {
+  overflow-x: hidden;
+}

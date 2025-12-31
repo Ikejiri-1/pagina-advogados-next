@@ -15,7 +15,7 @@ export const BlockOriginsQuestions = () => {
     {
       title: "AÇÕES TRABALHISTAS",
       description:
-        "Valores reconhecidos em ações trabalhistas podem ser cobrados judicialmente por meio de execução.",
+        "Valores que surgiram numa ação trabalhista podem ser cobrados judicialmente através de uma ação de execução.",
     },
     {
       title: "PROCESSOS CÍVEIS",
@@ -25,7 +25,7 @@ export const BlockOriginsQuestions = () => {
     {
       title: "MEDIDAS CAUTELARES CRIMINAIS",
       description:
-        "Em investigações que envolvem valores, pode haver bloqueio preventivo para preservar provas e/ou restituir a vítima.",
+        "Em investigações que envolvem valores pode haver bloqueio preventivo para preservar provas e/ou restituir a vítima.",
     },
   ];
 

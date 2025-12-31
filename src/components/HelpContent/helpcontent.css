@@ -22,7 +22,7 @@
 @keyframes slideLeft {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;
@@ -48,7 +48,7 @@
 
 .help-content li {
   opacity: 0;
-  transform: translateX(-40px);
+  transform: translateX(-20px);
 }
 .help-content.animate li {
   animation: slideFromLeft 0.6s ease-out forwards;
@@ -69,7 +69,7 @@
 @keyframes slideFromLeft {
   from {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;

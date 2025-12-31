@@ -28,13 +28,24 @@ const content = [
 
 export const WhyIsPossible = () => {
   const titleRef = useAnimateOnView<HTMLHeadingElement>({ threshold: 0.2 });
-  const cardsRef = useAnimateOnView<HTMLDivElement>({ threshold: 1 });
 
+  const textOneRef = useAnimateOnView<HTMLHeadingElement>({ threshold: 0.3 });
+  const textTwoRef = useAnimateOnView<HTMLHeadingElement>({ threshold: 0.3 });
+
+  const cardsRef = useAnimateOnView<HTMLDivElement>({ threshold: 0.6 });
   return (
     <div ref={titleRef} className="why-is-possible">
       <h2 className="why-title">
         PORQUE É POSSÍVEL REAVER OS VALORES BLOQUEADOS?
       </h2>
+
+      <h3 ref={textOneRef} className="why-text">
+        A lei protege certas verbas e alguns bens do devedor. Isso por conta do
+        direito à vida digna da pessoa.
+      </h3>
+      <h3 ref={textTwoRef} className="why-text">
+        É possível pedir a liberação nos seguintes casos:
+      </h3>
 
       <div ref={cardsRef} className="cards-grid">
         {content.map((item, index) => (

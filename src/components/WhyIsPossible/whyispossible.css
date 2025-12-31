@@ -21,10 +21,35 @@
   animation: fadeUp 0.8s ease-in-out forwards;
   animation-delay: 0.2s;
 }
+.why-text {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  max-width: 700px;
+  color: var(--dark-blue);
+  opacity: 0;
+  transform: translateY(20px);
+  margin-top: 0.5em;
+}
+.why-text.animate {
+  animation: fadeUpSoft 0.6s ease-out forwards;
+}
+
+@keyframes fadeUpSoft {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes slideFromLeft {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;
