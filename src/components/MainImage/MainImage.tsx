@@ -25,6 +25,9 @@ export function MainImage({
 }: MainImageProps) {
   const imageRef = useRef<HTMLDivElement>(null);
 
+  const phone = "12981131591";
+  const message = "Ola, gostaria de saber mais!";
+
   useEffect(() => {
     const handleScroll = () => {
       if (!imageRef.current) return;
@@ -62,7 +65,7 @@ export function MainImage({
       )}
 
       {button && (
-        <Link href={whatsappLink} target="_blank">
+        <Link href={whatsappLink(phone, message)} target="_blank">
           <div className="main-image-button">
             <div className="slide-wrapper-button">
               <button>{buttonText}</button>
