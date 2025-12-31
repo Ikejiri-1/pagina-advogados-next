@@ -1,16 +1,12 @@
 "use client";
 
+import { useAnimateOnView } from "@/hooks/useAnimateOnView";
+import { ButtonCallALawyer } from "../ButtonCall";
 import { AnimatedCard } from "../Cards/AnimatedCard";
 import "./blockorigins.css";
-import { useEffect, useRef } from "react";
 
 export const BlockOriginsQuestions = () => {
   const content = [
-    {
-      title: "ORIGEM DO BLOQUEIO",
-      description:
-        "Entender a origem do bloqueio ajuda a preparar o pedido de liberação dos valores.",
-    },
     {
       title: "EXECUÇÕES FISCAIS",
       description:
@@ -31,39 +27,29 @@ export const BlockOriginsQuestions = () => {
       description:
         "Em investigações que envolvem valores, pode haver bloqueio preventivo para preservar provas e/ou restituir a vítima.",
     },
-    {
-      title: "ATENÇÃO AO PRAZO",
-      description:
-        "Cada caso tem suas particularidades, mas é essencial agir rapidamente para evitar que ativos impenhoráveis fiquem retidos por longos períodos.",
-    },
   ];
 
-  const blockTitleRef = useRef<HTMLHeadingElement>(null);
-  const cardRef = useRef<HTMLDivElement>(null);
+  const blockTitleRef = useAnimateOnView<HTMLHeadingElement>();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate");
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
+  const infoTopRef = useAnimateOnView<HTMLHeadingElement>({
+    threshold: 0.4,
+  });
 
-    if (blockTitleRef.current) observer.observe(blockTitleRef.current);
-    if (cardRef.current) observer.observe(cardRef.current);
+  const infoBottomRef = useAnimateOnView<HTMLHeadingElement>({
+    threshold: 0.4,
+  });
 
-    return () => observer.disconnect();
-  }, []);
-
+  const buttonRef = useAnimateOnView<HTMLButtonElement>();
   return (
     <section className="block-origins">
-      <h2 className="block-title" ref={blockTitleRef}>
+      <h2 ref={blockTitleRef} className="block-title">
         QUAIS AS POSSÍVEIS ORIGENS DOS BLOQUEIOS?
       </h2>
+
+      <h3 ref={infoTopRef} className="info-text">
+        Entender a origem do bloqueio ajuda a preparar o pedido de liberação dos
+        valores.
+      </h3>
 
       <div className="cards-grid">
         {content.map((item, index) => (
@@ -73,6 +59,14 @@ export const BlockOriginsQuestions = () => {
           </AnimatedCard>
         ))}
       </div>
+
+      <h3 ref={infoBottomRef} className="info-text">
+        ATENÇÃO AO PRAZO! Cada caso tem suas particularidades, mas é essencial
+        agir rapidamente para evitar que ativos impenhoráveis fiquem retidos por
+        longos períodos
+      </h3>
+
+      <ButtonCallALawyer ref={buttonRef} />
     </section>
   );
 };

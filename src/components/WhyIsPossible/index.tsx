@@ -1,7 +1,7 @@
 "use client";
+import { useAnimateOnView } from "@/hooks/useAnimateOnView";
 import { AnimatedCard } from "../Cards/AnimatedCard";
 import "./whyispossible.css";
-import { useRef, useEffect } from "react";
 
 const content = [
   {
@@ -27,31 +27,16 @@ const content = [
 ];
 
 export const WhyIsPossible = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.2 }
-    );
-
-    if (sectionRef.current) observer.observe(sectionRef.current);
-
-    return () => observer.disconnect();
-  }, []);
+  const titleRef = useAnimateOnView<HTMLHeadingElement>({ threshold: 0.2 });
+  const cardsRef = useAnimateOnView<HTMLDivElement>({ threshold: 1 });
 
   return (
-    <div ref={sectionRef} className="why-is-possible">
+    <div ref={titleRef} className="why-is-possible">
       <h2 className="why-title">
         PORQUE É POSSÍVEL REAVER OS VALORES BLOQUEADOS?
       </h2>
 
-      <div className="cards-grid">
+      <div ref={cardsRef} className="cards-grid">
         {content.map((item, index) => (
           <AnimatedCard key={index}>
             <h3 className="card-item-title">{item.title}</h3>

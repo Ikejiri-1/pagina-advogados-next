@@ -1,30 +1,9 @@
 "use client";
+import { useAnimateOnView } from "@/hooks/useAnimateOnView";
 import { Card } from "../Card";
 import "./whyblocked.css";
-import { useRef, useEffect } from "react";
-
 export const WhyBlocked = () => {
-  const whyBlockedRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-          observer.disconnect();
-        }
-      },
-      {
-        threshold: 0.5,
-      }
-    );
-
-    if (whyBlockedRef.current) {
-      observer.observe(whyBlockedRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
+  const whyBlockedRef = useAnimateOnView<HTMLDivElement>();
 
   return (
     <div ref={whyBlockedRef} className="why-blocked">

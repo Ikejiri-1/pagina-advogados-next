@@ -12,6 +12,7 @@
 
 body {
   background-color: var(--offWhite);
+  font-family: sans-serif;
 }
 
 h2 {

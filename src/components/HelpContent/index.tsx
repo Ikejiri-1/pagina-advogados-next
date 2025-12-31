@@ -1,6 +1,7 @@
-import { useEffect, useRef } from "react";
 import "./helpcontent.css";
 import { AnimatedCard } from "../Cards/AnimatedCard";
+import { ButtonCallALawyer } from "../ButtonCall";
+import { useAnimateOnView } from "@/hooks/useAnimateOnView";
 
 export const HelpContent = () => {
   const content = [
@@ -26,27 +27,9 @@ export const HelpContent = () => {
     },
   ];
 
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const listRef = useRef<HTMLUListElement>(null);
+  const titleRef = useAnimateOnView<HTMLHeadingElement>();
+  const buttonRef = useAnimateOnView<HTMLButtonElement>();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate");
-            observer.unobserve(entry.target); // 👈 para só este elemento
-          }
-        });
-      },
-      { threshold: 0.4 }
-    );
-
-    if (titleRef.current) observer.observe(titleRef.current);
-    if (listRef.current) observer.observe(listRef.current);
-
-    return () => observer.disconnect();
-  }, []);
   return (
     <>
       <div className="main-content">
@@ -61,6 +44,7 @@ export const HelpContent = () => {
             </AnimatedCard>
           ))}
         </div>
+        <ButtonCallALawyer ref={buttonRef} />
       </div>
     </>
   );

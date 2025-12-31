@@ -20,6 +20,7 @@
   flex-direction: column;
   gap: 1em;
   padding-top: 3em;
+  color: var(--offWhite);
 }
 .logo-footer {
   display: inline-flex;
@@ -31,7 +32,7 @@
   height: 200px;
   mask: url("../../assets/logo_azul.png") no-repeat center / contain;
   -webkit-mask: url("../../assets/logo_azul.png") no-repeat center / contain;
-  background: var(--gray);
+  background: var(--offWhite);
 }
 
 @media screen and (max-width: 1024px) {
@@ -52,7 +53,8 @@
     grid-template-columns: repeat(1, minmax(0, 1fr));
     height: auto;
     padding: 2rem;
-    padding-top: 1rem;
+    padding-top: 1em;
+    padding-bottom: 3em;
   }
   .image-footer {
     width: 100px;

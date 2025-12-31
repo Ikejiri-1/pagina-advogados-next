@@ -4,6 +4,7 @@
   opacity: 0;
   transform: translateY(30px);
   margin-bottom: 1em;
+  font-weight: 600;
 }
 
 .card-wrapper {

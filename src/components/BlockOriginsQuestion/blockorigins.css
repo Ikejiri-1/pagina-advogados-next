@@ -10,7 +10,7 @@
 .block-title {
   font-size: 2.5em;
   text-align: center;
-
+  font-weight: 600;
   opacity: 0;
   transform: translateY(30px);
 }
@@ -28,6 +28,30 @@
 .card-wrapper.animate {
   animation: fadeLeft 0.9s ease-out forwards;
 }
+.info-text {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: var(--dark-blue);
+  width: 600px;
+
+  opacity: 0;
+  transform: translateY(20px);
+}
+.info-text.animate {
+  animation: fadeUpSoft 0.7s ease-out forwards;
+}
+
+@keyframes fadeUpSoft {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @keyframes fadeLeft {
   from {
@@ -44,5 +68,8 @@
   .block-title {
     font-size: 1.5em;
     width: 350px;
+  }
+  .info-text {
+    width: 300px;
   }
 }
