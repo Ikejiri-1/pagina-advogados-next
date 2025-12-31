@@ -46,11 +46,11 @@
 }
 @media screen and (max-width: 768px) {
   .header-container {
-    height: 17vh;
+    height: 18vh;
   }
   .logo {
-    width: 175px;
-    height: 115px;
+    width: 200px;
+    height: 125px;
     margin: 0;
   }
 }
