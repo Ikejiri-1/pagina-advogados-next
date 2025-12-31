@@ -33,7 +33,7 @@
 }
 
 .main-image-description {
-  top: 65%;
+  top: 68%;
   color: var(--gray);
   font-size: 1.2rem;
   text-align: center;
@@ -41,7 +41,7 @@
 }
 
 .main-image-button {
-  top: 80%;
+  top: 85%;
 }
 
 .main-image-button button {
@@ -128,7 +128,7 @@
     width: 800px;
   }
   .main-image-description {
-    top: 70%;
+    top: 68%;
     max-width: 100%;
     width: 600px;
     font-size: 1.5em;

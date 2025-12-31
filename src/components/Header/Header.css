@@ -14,7 +14,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  height: 20vh;
+  height: 25vh;
   background: rgba(8, 1, 41, 0.45);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -27,6 +27,7 @@
 @media screen and (max-width: 1024px) {
   .header-container {
     flex-direction: column;
+    height: 20vh;
   }
   .logo {
     width: 350px;

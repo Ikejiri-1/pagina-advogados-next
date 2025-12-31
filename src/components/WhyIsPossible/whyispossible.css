@@ -45,5 +45,6 @@
 @media screen and (max-width: 768px) {
   .why-title {
     font-size: 1.5em;
+    width: 380px;
   }
 }
