@@ -53,4 +53,9 @@
   .why-blocked-title {
     font-size: 1.5em;
   }
+  .card-unique-content {
+    font-size: 1.2em;
+    padding: 1em;
+    max-width: 300px;
+  }
 }

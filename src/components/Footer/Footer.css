@@ -1,7 +1,7 @@
 .footer-container {
   width: 100%; /* w-full */
-  height: 50vh; /* h-[50vh] */
-  background-color: var(--dark-blue);
+  height: 40vh; /* h-[50vh] */
+  background-color: #000;
 
   display: grid; /* grid */
   grid-template-columns: repeat(4, minmax(0, 1fr)); /* grid-cols-1 */

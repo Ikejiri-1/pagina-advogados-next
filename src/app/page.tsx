@@ -2,7 +2,7 @@
 "use client";
 import "./page.css";
 import { MainImage } from "@/components/MainImage/MainImage";
-import img from "../assets/wpaper.webp";
+import img from "../assets/predios.jpg";
 import lawyers from "../assets/advogados.png";
 import { HelpContent } from "@/components/HelpContent";
 import { BlockOriginsQuestions } from "@/components/BlockOriginsQuestion";
@@ -66,10 +66,6 @@ export default function Home() {
             width={400}
             className="img-lawyers"
           />
-          <div className="names">
-            <p>Caio Ikejiri</p>
-            <p>Caio Alves</p>
-          </div>
         </figure>
         <AboutUs />
       </div>

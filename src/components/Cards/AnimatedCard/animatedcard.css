@@ -59,6 +59,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .cards-grid {
+    max-width: 300px;
+  }
   .card-item-title {
     font-size: 1.2em;
   }

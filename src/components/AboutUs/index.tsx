@@ -35,14 +35,15 @@ export const AboutUs = () => {
         <li>
           <span>
             Somos comprometidos com a qualidade no atendimento de nossos
-            clientes e com a transparência em cada etapa.
+            clientes e com a transparência em cada etapa. Trabalhamos de maneira
+            criteriosa, cuidando das peculiaridades de cada caso.
           </span>
         </li>
         <li>
           <span>
-            Nosso foco é proporcionar o melhor resultado possível, buscando a
-            melhor solução, planejando a melhor estratégia de defesa e
-            negociando acordos.
+            Nosso foco é proporcionar resultados a nível de excelência. Buscamos
+            sempre a melhor solução, a melhor estratégia de defesa e os melhores
+            acordos possíveis.
           </span>
         </li>
         <li>

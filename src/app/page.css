@@ -10,7 +10,7 @@
   justify-content: space-around;
   background-color: var(--dark-blue);
   width: 100%;
-  padding: 4em 0;
+  padding: 4em 0 2em 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -19,12 +19,6 @@
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-.names {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 3.7em;
-  color: var(--gray);
-}
 /* SOMENTE A IMAGEM */
 .image-animate {
   opacity: 0;
@@ -53,8 +47,11 @@
     padding: 2em 0;
     gap: 2em;
   }
-  .names {
-    margin-top: 0.5em;
-    font-size: 1.2em;
+}
+@media screen and (max-width: 768px) {
+  .img-lawyers {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
   }
 }
