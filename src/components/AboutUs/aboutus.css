@@ -6,7 +6,7 @@
 .about-us-list,
 .about-us-title {
   opacity: 0;
-  transform: translateX(20px);
+  transform: translateY(20px);
 }
 .about-us-list {
   margin: 4em auto;
@@ -39,7 +39,7 @@
 @keyframes slideFromBottom {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;
