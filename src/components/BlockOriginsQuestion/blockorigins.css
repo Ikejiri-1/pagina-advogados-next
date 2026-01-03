@@ -30,7 +30,7 @@
 }
 .info-text {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.6em;
   color: var(--dark-blue);
   width: 600px;
@@ -70,6 +70,7 @@
     width: 350px;
   }
   .info-text {
-    width: 300px;
+    width: 250px;
+    font-size: 1.3em;
   }
 }

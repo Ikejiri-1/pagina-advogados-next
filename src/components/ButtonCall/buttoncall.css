@@ -7,11 +7,16 @@
   border: none;
   text-transform: uppercase;
   display: block;
-
   /* estado inicial */
   opacity: 0;
   transform: translateY(30px);
 }
+
+.button-call a {
+  text-decoration: none;
+  color: var(--offWhite);
+}
+
 .button-call.animate {
   opacity: 1;
   transform: translateY(0);

@@ -12,9 +12,12 @@
 
 body {
   background-color: var(--offWhite);
-  font-family: sans-serif;
 }
 
 h2 {
   color: var(--dark-blue);
+}
+
+ul {
+  list-style: none;
 }

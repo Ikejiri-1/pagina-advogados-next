@@ -9,7 +9,7 @@ export const WppButton = () => {
   return (
     <div className="wpp-button">
       <Link href={whatsappLink(phone, message)}>
-        <Image src={wpp} alt="Ícone do WhatsApp" />
+        <Image src={wpp} alt="Ícone do WhatsApp" className="wpp-img" />
       </Link>
     </div>
   );
