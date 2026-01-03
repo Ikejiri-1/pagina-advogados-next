@@ -34,7 +34,7 @@
   line-height: 1.6em;
   color: var(--dark-blue);
   width: 600px;
-
+  font-weight: 700;
   opacity: 0;
   transform: translateY(20px);
 }
