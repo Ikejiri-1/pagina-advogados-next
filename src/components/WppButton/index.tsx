@@ -6,7 +6,7 @@ import Image from "next/image";
 export const WppButton = () => {
   const phone = "12981131591";
   const message =
-    "Olá, tudo bem? \n Estou com minha conta bancária bloqueada e quero consultar sobre desbloqueio judicial.";
+    "Olá, tudo bem? \n Estou com minha conta bancária bloqueada e preciso de ajuda.";
   return (
     <div className="wpp-button">
       <Link href={whatsappLink(phone, message)}>
