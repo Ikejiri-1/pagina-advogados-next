@@ -26,7 +26,8 @@ export function MainImage({
   const imageRef = useRef<HTMLDivElement>(null);
 
   const phone = "12981131591";
-  const message = "Ola, gostaria de saber mais!";
+  const message =
+    "Olá, tudo bem? \n Estou com minha conta bancária bloqueada e preciso de ajuda.";
 
   useEffect(() => {
     const handleScroll = () => {
