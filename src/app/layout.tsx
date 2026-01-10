@@ -11,7 +11,8 @@ const open = Neuton({
 
 export const metadata: Metadata = {
   title: "Alves & Ikejiri Advogados",
-  description: "Página de advogados dedicada a liberação de valores bloqueados",
+  description:
+    "Assessoria jurídica especializada em desbloqueio de valores em conta bancária.",
 };
 export default function RootLayout({
   children,
