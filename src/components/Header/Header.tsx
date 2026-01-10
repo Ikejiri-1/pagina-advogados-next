@@ -3,7 +3,7 @@
 import Image from "next/image";
 import logo from "../../assets/logo_branca.png";
 // import { usePathname } from "next/navigation";
-import Link from "next/link";
+
 import "./Header.css";
 
 // const links = [
@@ -19,11 +19,9 @@ export function Header() {
     <header className="header-container ">
       {/* Logo */}
       <div className="logo-header">
-        <Link href="/">
-          <figure>
-            <Image src={logo} alt="Logo dos advogados" className="logo" />
-          </figure>
-        </Link>
+        <figure>
+          <Image src={logo} alt="Logo dos advogados" className="logo" />
+        </figure>
       </div>
 
       {/* Menu */}
