@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../../assets/logo_branca.png";
+import logo from "../../../public/assets/logo_branca.png";
 // import { usePathname } from "next/navigation";
 
 import "./Header.css";

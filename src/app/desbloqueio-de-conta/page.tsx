@@ -2,8 +2,8 @@
 "use client";
 import "../page.css";
 import { MainImage } from "@/components/MainImage/MainImage";
-import img from "../../assets/predios.jpg";
-import lawyers from "../../assets/advogados.png";
+import img from "../../../public/assets/predios.jpg";
+import lawyers from "../../../public/assets/advogados.png";
 import { HelpContent } from "@/components/HelpContent";
 import { BlockOriginsQuestions } from "@/components/BlockOriginsQuestion";
 import { WhyBlocked } from "@/components/WhyBlocked";

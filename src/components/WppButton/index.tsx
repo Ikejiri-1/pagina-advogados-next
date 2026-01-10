@@ -1,7 +1,7 @@
 import { whatsappLink } from "@/utils/linkWpp";
 import Link from "next/link";
 import "./wppbutton.css";
-import wpp from "../../assets/whatsapp.png";
+import wpp from "../../../public/assets/whatsapp.png";
 import Image from "next/image";
 export const WppButton = () => {
   const phone = "12981131591";
