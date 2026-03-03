@@ -24,7 +24,7 @@ export default function AccUnlock() {
           observer.disconnect();
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     if (imageRef.current) observer.observe(imageRef.current);
@@ -42,13 +42,7 @@ export default function AccUnlock() {
           Sua conta bancária está sendo bloqueada por uma decisão judicial?
        "
         description="Conte com a nossa assessoria especializada em liberação de valores bloqueados"
-        button={true}
-        buttonText="FALE COM UM ADVOGADO"
       />
-
-      {/* <div className="cards">
-        <Cards />
-      </div> */}
       <div className="content-section">
         <HelpContent />
 

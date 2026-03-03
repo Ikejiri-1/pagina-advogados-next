@@ -2,32 +2,18 @@
 
 import Image, { StaticImageData } from "next/image";
 import { useEffect, useRef } from "react";
-import Link from "next/link";
 import "./MainImage.css";
-import { whatsappLink } from "@/utils/linkWpp";
+import { ButtonCallALawyer } from "../ButtonCall";
 
 interface MainImageProps {
   img: StaticImageData;
   title?: string;
   alt: string;
   description?: string;
-  button?: boolean;
-  buttonText?: string;
 }
 
-export function MainImage({
-  img,
-  title,
-  alt,
-  description,
-  button,
-  buttonText,
-}: MainImageProps) {
+export function MainImage({ img, title, alt, description }: MainImageProps) {
   const imageRef = useRef<HTMLDivElement>(null);
-
-  const phone = "12981131591";
-  const message =
-    "Olá, tudo bem? \n Estou com minha conta bancária bloqueada e preciso de ajuda.";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,15 +51,11 @@ export function MainImage({
         </div>
       )}
 
-      {button && (
-        <Link href={whatsappLink(phone, message)} target="_blank">
-          <div className="main-image-button">
-            <div className="slide-wrapper-button">
-              <button>{buttonText}</button>
-            </div>
-          </div>
-        </Link>
-      )}
+      <div className="main-image-button">
+        <div className="slide-wrapper-button">
+          <ButtonCallALawyer />
+        </div>
+      </div>
     </div>
   );
 }

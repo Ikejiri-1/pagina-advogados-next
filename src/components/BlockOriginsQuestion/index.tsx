@@ -63,7 +63,7 @@ export const BlockOriginsQuestions = () => {
       <h3 ref={infoBottomRef} className="info-text">
         ATENÇÃO AO PRAZO! Cada caso tem suas particularidades, mas é essencial
         agir rapidamente para evitar que ativos impenhoráveis fiquem retidos por
-        longos períodos
+        longos períodos.
       </h3>
 
       <ButtonCallALawyer ref={buttonRef} />
